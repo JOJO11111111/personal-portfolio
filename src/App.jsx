@@ -3,6 +3,8 @@ import './App.css';
 import { LongNoseDog } from './MemeCat'; // Ensure the path is correct
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import DancingModel from './DancingModel';
+import GumballMachine from './components/GumballMachine';
+
 
 function App() {
   return (
@@ -31,66 +33,158 @@ function App() {
       <div className="main-content">
         <section id="about">
           <h2>About Me</h2>
+
           <p>Hi! I'm Tiffany, a senior undergraduate student at BU majoring in Computer Science and Mathematics.</p>
+          <h3>Interests</h3>
+
           <ul>
             <li>AI and Security: My main interests, where I focus on research and development.</li>
             <li>Computer Graphics: Explored graphics through projects and hands-on experiences.</li>
             <li>Machine Learning: Participated in Kaggle competitions to strengthen ML skills.
               <div className="animation-container">
-                <LongNoseDog />
+                {/* <LongNoseDog /> */}
               </div>
             </li>
             <li>Capture The Flag (CTF): Excited to participate in an upcoming CTF competition at the end of the year.</li>
             <li>Animation: Created using JavaScript and Lottie, just for fun while exploring animation features.</li>
           </ul>
-          <h3>Skills</h3>
-          <div className="skills-grid">
-            <i className="fab fa-python"></i>  {/* Python */}
-            <i className="fas fa-database"></i>  {/* SQL */}
-            <i className="fab fa-js-square"></i>  {/* JavaScript */}
-            <i className="fab fa-css3-alt"></i>  {/* CSS */}
-            <i className="fab fa-html5"></i>  {/* HTML */}
-            <i className="fab fa-java"></i>  {/* Java */}
-            <img src="/path/to/ocaml-icon.svg" alt="OCaml" />  {/* OCaml SVG */}
-            <i className="fas fa-c"></i>  {/* C */}
+          <h3>Programming Languages</h3>
+          <div className="languages-grid">
+            <i className="fab fa-python icon-python"></i>  {/* Python */}
+            <i className="fas fa-database icon-sql"></i>  {/* SQL */}
+            <i className="fab fa-js-square icon-js"></i>  {/* JavaScript */}
+            <i className="fab fa-css3-alt icon-css"></i>  {/* CSS */}
+            <i className="fab fa-html5 icon-html"></i>  {/* HTML */}
+            <i className="fab fa-java icon-java"></i>  {/* Java */}
+            {/* <img src="/ocaml.svg" alt="OCaml" className="icon-ocaml" />  OCaml SVG */}
+            <img
+              src="/ocaml.svg"
+              alt="OCaml"
+              className="icon-ocaml"
+              style={{
+                width: "40px", // Adjust the icon width
+                height: "40px", // Adjust the icon height
+              }}></img>
+
+            <i className="fas fa-c icon-c"></i>  {/* C */}
           </div>
+          <h3>Skills</h3>
+          <div className="skills-section">
+
+            <div className="skill-card">
+              <h4>🤖 Deep Learning Skills</h4>
+              <div className="skill-items">
+                <span>Generative Models</span>
+                <span>GAN</span>
+                <span>WGAN-GP</span>
+                <span>Diffusion</span>
+                <span>Malware Detection</span>
+                <span>Word2Vec</span>
+              </div>
+            </div>
+            <div className="skill-card">
+              <h4>💻 Development Skills</h4>
+              <div className="skill-items">
+                <span>React</span>
+                <span>APIs</span>
+                <span>MongoDB</span>
+                <span>SQL</span>
+                <span>Figma</span>
+                <span>Web App Development</span>
+              </div>
+            </div>
+            <div className="skill-card">
+              <h4>🔒 Security Skills</h4>
+              <div className="skill-items">
+                <span>SQL Injection</span>
+                <span>Cross-Site Scripting (XSS)</span>
+                <span>CSRF Attacks</span>
+                <span> Crptography</span>
+
+                <span>Network Security</span>
+              </div>
+            </div>
+
+
+          </div>
+
         </section>
 
         <section id="projects">
           <h2>Projects</h2>
-          <ul>
-            <li>
+          {/* <GumballMachine /> */}
+
+          <div className="projects-section">
+            <div className="project-card">
+              <h3>Malware Detection System</h3>
+              <p>Developed a GAN-based malware detection tool as part of my research in ML-based cybersecurity, achieving a 10% improvement in detection accuracy.</p>
+              <div className="tech-labels">
+                <span>Malware</span>
+                <span>GAN</span>
+                <span>Deep Learning</span>
+                <span>Software Security</span>
+              </div>
               <a href="https://github.com/tiffanybao/malware-detection" target="_blank" rel="noopener noreferrer">
-                <strong>Malware Detection System</strong>
+                <button>View Project</button>
               </a>
-              - Developed a GAN-based malware detection tool as part of my research in ML-based cybersecurity, achieving a 10% improvement in detection accuracy.
-            </li>
-            <li>
+            </div>
+
+            <div className="project-card">
+              <h3>OpenAI Security Web Audit</h3>
+              <p>Contributed to a security web audit for OpenAI, ensuring robust security measures.</p>
+              <div className="tech-labels">
+                <span>Web Security</span>
+                <span>CSRF/XSS Attack</span>
+                <span>Tracking pixels</span>
+                <span>Audit</span>
+              </div>
               <a href="https://create.piktochart.com/output/f300c62e19df-cybersecurity-roadmap" target="_blank" rel="noopener noreferrer">
-                <strong>OpenAI Security Web Audit</strong>
+                <button>View Project</button>
               </a>
-              - Contributed to a security web audit for OpenAI, ensuring robust security measures.
-            </li>
-            <li>
+            </div>
+
+            <div className="project-card">
+              <h3>BUCSSA Web</h3>
+              <p>Developed the official website for Boston University's Chinese Students and Scholars Association, showcasing community activities and resources.</p>
+              <div className="tech-labels">
+                <span>Web Development</span>
+                <span>React</span>
+                <span>Front end</span>
+              </div>
               <a href="https://www.bucssa.org/" target="_blank" rel="noopener noreferrer">
-                <strong>BUCSSA Web</strong>
+                <button>View Project</button>
               </a>
-              - Developed the official website for Boston University's Chinese Students and Scholars Association, showcasing community activities and resources.
-            </li>
-            <li>
+            </div>
+
+            <div className="project-card">
+              <h3>BUCSSA Application Portal</h3>
+              <p>Designed a full-stack application portal for BU Chinese students, enabling efficient application processing.</p>
+              <div className="tech-labels">
+                <span>Full-Stack</span>
+                <span>React</span>
+                <span>MySQL</span>
+              </div>
               <a href="https://application-portal.bucssa.org/zhaoxin" target="_blank" rel="noopener noreferrer">
-                <strong>BUCSSA Application Portal</strong>
+                <button>View Project</button>
               </a>
-              - Designed a full-stack application portal for BU Chinese students, enabling efficient application processing.
-            </li>
-            <li>
+            </div>
+
+            <div className="project-card">
+              <h3>Fabrication Formwork in BU CS Shape Lab</h3>
+              <p>Conducted research at BU’s Shape Lab, creating computational design models and pipelines for fabric fabrication in computer graphics.</p>
+              <div className="tech-labels">
+                <span>Computer Graphics</span>
+                <span>Research</span>
+                <span>Fabrication</span>
+              </div>
               <a href="https://application-portal.bucssa.org/zhaoxin" target="_blank" rel="noopener noreferrer">
-                <strong>Fabrication Formwork in BU CS Shape Lab</strong>
+                <button>View Project</button>
               </a>
-              - Conducted research at BU’s Shape Lab, creating computational design models and pipelines for fabric fabrication in computer graphics, involving hands-on work with 3D formwork models and fabrication processes.
-            </li>
-          </ul>
+            </div>
+          </div>
+
         </section>
+
 
         <section id="resume">
           <h2>CV/Resume</h2>
@@ -125,6 +219,24 @@ function App() {
         <section id="dancing-model">
           <DancingModel />
         </section>
+
+
+        {/* need to fix this part */}
+        <section id="Collections">
+          <h2>Collections for useful links i found so far</h2>
+          <p>
+            <a href="        http://www.species-in-pieces.com/
+" target="_blank" rel="noopener noreferrer">        http://www.species-in-pieces.com/
+            </a>
+            <a href="                   http://www.unixwiz.net/techtips/sql-injection.html
+
+" target="_blank" rel="noopener noreferrer">                   http://www.unixwiz.net/techtips/sql-injection.html
+
+            </a>
+          </p>
+        </section>
+
+
         <footer>
           <p>© 2024 Tiffany Bao. Built with React + Vite.</p>
         </footer>

@@ -31,7 +31,7 @@ function Model({ onAnimationEnd }) {
       const firstAnimation = actions[Object.keys(actions)[0]];
       firstAnimation.play();
 
-      const animationDuration = firstAnimation._clip.duration * 1000;
+      const animationDuration = firstAnimation._clip.duration * 10;
       const timer = setTimeout(() => {
         onAnimationEnd();
       }, animationDuration);
@@ -40,7 +40,7 @@ function Model({ onAnimationEnd }) {
     }
   }, [actions, onAnimationEnd]);
 
-  return <primitive object={scene} scale={0.68} position={[-0.15, 0.1, 1]} />;
+  return <primitive object={scene} scale={0.68} position={[-0.3, 0.1, 1]} />;
 }
 
 export default function DancingModel() {
@@ -65,7 +65,8 @@ export default function DancingModel() {
 
       {showForm && (
         <div className="contact-form">
-          <h2>Contact Me</h2>
+          <h2>Leave a message?</h2>
+
           <form>
             <label>
               Name:
