@@ -227,7 +227,8 @@ function App() {
 
 
 
-        <section id="Contact" style={{ position: 'relative' }}>
+        <section id="contact" style={{ position: 'relative' }}>
+          <h2>Contact</h2>
           {/* <h2>Contact</h2> */}
           <ContactForm /> {/* Render the Contact section here */}
 
