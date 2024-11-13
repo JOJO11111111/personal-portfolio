@@ -1,0 +1,11 @@
+Model Information:
+* title:	minecraft hacker head
+* source:	https://sketchfab.com/3d-models/minecraft-hacker-head-13db1541a5b14fbdadb8e74656a500ec
+* author:	cpearce1010 (https://sketchfab.com/cpearce1010)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "minecraft hacker head" (https://sketchfab.com/3d-models/minecraft-hacker-head-13db1541a5b14fbdadb8e74656a500ec) by cpearce1010 (https://sketchfab.com/cpearce1010) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -128,12 +128,10 @@ function App() {
                 <span>GAN</span>
                 <span>Deep Learning</span>
                 <span>Software Security</span>
-                <span>Research</span>
-
               </div>
-              <button disabled style={{ cursor: 'not-allowed', opacity: 0.6 }}>
-                View Project (Coming Soon)
-              </button>
+              <a href="https://github.com/tiffanybao/malware-detection" target="_blank" rel="noopener noreferrer">
+                <button>View Project</button>
+              </a>
             </div>
 
             <div className="project-card">
@@ -144,7 +142,6 @@ function App() {
                 <span>CSRF/XSS Attack</span>
                 <span>Tracking pixels</span>
                 <span>Audit</span>
-                <span>Infographic</span>
               </div>
               <a href="https://create.piktochart.com/output/f300c62e19df-cybersecurity-roadmap" target="_blank" rel="noopener noreferrer">
                 <button>View Project</button>
@@ -177,7 +174,6 @@ function App() {
               </a>
             </div>
 
-
             <div className="project-card">
               <h3>Fabrication Formwork in BU CS Shape Lab</h3>
               <p>Conducted research at BU’s Shape Lab, creating computational design models and pipelines for fabric fabrication in computer graphics.</p>
@@ -186,11 +182,10 @@ function App() {
                 <span>Research</span>
                 <span>Fabrication</span>
               </div>
-              <button disabled style={{ cursor: 'not-allowed', opacity: 0.6 }}>
-                View Project (Coming Soon)
-              </button>
+              <a href="https://application-portal.bucssa.org/zhaoxin" target="_blank" rel="noopener noreferrer">
+                <button>View Project</button>
+              </a>
             </div>
-
           </div>
 
         </section>
@@ -236,6 +231,21 @@ function App() {
 
 
 
+
+        {/* need to fix this part */}
+        <section id="Collections">
+          <h2>Collections for useful links i found so far</h2>
+          <p>
+            <a href="        http://www.species-in-pieces.com/
+" target="_blank" rel="noopener noreferrer">        http://www.species-in-pieces.com/
+            </a>
+            <a href="                   http://www.unixwiz.net/techtips/sql-injection.html
+
+" target="_blank" rel="noopener noreferrer">                   http://www.unixwiz.net/techtips/sql-injection.html
+
+            </a>
+          </p>
+        </section>
 
 
         <footer>

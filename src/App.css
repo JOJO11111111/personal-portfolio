@@ -11,7 +11,8 @@ body {
   top: 0;
   left: 0;
   width: 220px;
-  height: 100%;
+  height: 100vh;
+  /* Fixed height for the viewport */
   background-color: #282c34;
   color: white;
   display: flex;
@@ -67,8 +68,6 @@ footer {
 
 
 
-
-
 .languages-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -117,25 +116,25 @@ footer {
 
 /* Set individual CSS variables for "lay down" positions */
 .languages-grid i:nth-child(1) {
-  --translate-x: 10px;
+  --translate-x: 16px;
   --translate-y: 120px;
-  --rotate-deg: -30deg;
+  --rotate-deg: -300deg;
 }
 
 .languages-grid i:nth-child(2) {
-  --translate-x: 100px;
+  --translate-x: 90px;
   --translate-y: 120px;
-  --rotate-deg: 30deg;
+  --rotate-deg: -140deg;
 }
 
 .languages-grid i:nth-child(3) {
-  --translate-x: -70px;
+  --translate-x: -7px;
   --translate-y: 120px;
-  --rotate-deg: -60deg;
+  --rotate-deg: -100deg;
 }
 
 .languages-grid i:nth-child(4) {
-  --translate-x: 60px;
+  --translate-x: 80px;
   --translate-y: 110px;
   --rotate-deg: 80deg;
 }
@@ -143,25 +142,25 @@ footer {
 .languages-grid i:nth-child(5) {
   --translate-x: 150px;
   --translate-y: 10px;
-  --rotate-deg: 25deg;
+  --rotate-deg: 125deg;
 }
 
 .languages-grid i:nth-child(6) {
-  --translate-x: 200px;
+  --translate-x: 35px;
   --translate-y: 10px;
-  --rotate-deg: -20deg;
+  --rotate-deg: -200deg;
 }
 
 .languages-grid .icon-ocaml {
-  --translate-x: 20px;
+  --translate-x: 200px;
   --translate-y: 10px;
-  --rotate-deg: 15deg;
+  --rotate-deg: -260deg;
 }
 
 .languages-grid i:nth-child(8) {
-  --translate-x: -100px;
-  --translate-y: 10px;
-  --rotate-deg: -50deg;
+  --translate-x: 50px;
+  --translate-y: 4px;
+  --rotate-deg: -80deg;
 }
 
 /* Lay down position when not hovered */
@@ -408,6 +407,12 @@ footer {
 
 /* Canvas Container */
 .canvas-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  pointer-events: none;
+  /* Prevents canvas from blocking form interactions */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -416,70 +421,112 @@ footer {
   gap: 20px;
 }
 
+
+
+
+
 .canvas-container canvas {
   width: 60%;
   height: auto;
 }
 
-/* Contact Form */
+
+
+
+
+
+
+
+
+.canvas-wrapper {
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* App.css */
+
+
+/* Basic contact form styling */
 .contact-form {
-  padding: 66px;
-  border: 1px solid #e0e0e0;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  /* Center the form horizontally */
+  padding: 20px;
+  background-color: #f9f9f9;
+  /* Light background color */
+  border: 1px solid #ddd;
+  /* Light border */
   border-radius: 8px;
-  background-color: #fafafa;
+  /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
-  margin-right: 10px;
-  margin-top: -150px;
+  /* Subtle shadow */
 }
 
+/* Form title */
 .contact-form h2 {
-  font-size: 2em;
-  color: #333;
-  margin-top: 0;
   text-align: center;
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
 }
 
+/* Label and form fields */
 .contact-form label {
   display: block;
   font-weight: bold;
   color: #555;
   margin-top: 15px;
-  font-size: 1.2em;
+  margin-bottom: 5px;
+  font-size: 0.9em;
 }
 
-.contact-form input,
+.contact-form input[type="text"],
+.contact-form input[type="email"],
 .contact-form textarea {
-  width: 100%;
-  padding: 15px;
-  margin-top: 10px;
+  width: 95%;
+  /* Full-width fields */
+  padding: 10px;
   border: 1px solid #ddd;
+  /* Light border */
   border-radius: 5px;
-  font-size: 1.1em;
+  /* Rounded corners */
+  font-size: 1em;
   color: #333;
+  resize: vertical;
+  /* Allow resizing of the textarea vertically */
 }
 
-.contact-form input:focus,
+/* Field focus styling */
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
 .contact-form textarea:focus {
-  outline: none;
   border-color: #0073e6;
-  box-shadow: 0 0 10px rgba(0, 115, 230, 0.3);
+  /* Blue border on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 115, 230, 0.3);
+  /* Blue shadow on focus */
 }
 
+/* Submit button styling */
 .contact-form button {
   display: block;
   width: 100%;
-  padding: 15px;
+  padding: 12px;
   margin-top: 20px;
   background-color: #0073e6;
+  /* Blue background */
   color: white;
+  font-size: 1.1em;
+  font-weight: bold;
   border: none;
   border-radius: 5px;
-  font-size: 1.2em;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
+/* Submit button hover effect */
 .contact-form button:hover {
   background-color: #005bb5;
+  /* Darker blue on hover */
 }
