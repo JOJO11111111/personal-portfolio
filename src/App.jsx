@@ -80,9 +80,8 @@ function App() {
               <h4>🤖 Deep Learning Skills</h4>
               <div className="skill-items">
                 <span>Generative Models</span>
-                <span>GAN</span>
-                <span>WGAN-GP</span>
-                <span>Diffusion</span>
+                <span>NLP</span>
+                <span>Diffusion/WGAN-GP/GAN models</span>
                 <span>Malware Detection</span>
                 <span>Word2Vec</span>
               </div>
@@ -90,11 +89,10 @@ function App() {
             <div className="skill-card">
               <h4>💻 Development Skills</h4>
               <div className="skill-items">
-                <span>React</span>
+                <span>React, Figma</span>
                 <span>APIs</span>
-                <span>MongoDB</span>
-                <span>SQL</span>
-                <span>Figma</span>
+                <span>MongoDB, MySQL</span>
+                <span>Flask</span>
                 <span>Web App Development</span>
               </div>
             </div>
@@ -105,8 +103,7 @@ function App() {
                 <span>Cross-Site Scripting (XSS)</span>
                 <span>CSRF Attacks</span>
                 <span> Crptography</span>
-
-                <span>Network Security</span>
+                <span>Web Security</span>
               </div>
             </div>
 
@@ -180,16 +177,41 @@ function App() {
 
             <div className="project-card">
               <h3>Fabrication Formwork in BU CS Shape Lab</h3>
-              <p>Conducted research at BU’s Shape Lab, creating computational design models and pipelines for fabric fabrication in computer graphics.</p>
+              <p>Conducted research at BU's Shape Lab, creating computational design models and pipelines for fabric fabrication in computer graphics.</p>
               <div className="tech-labels">
                 <span>Computer Graphics</span>
                 <span>Research</span>
-                <span>Fabrication</span>
+                <span>Computational fabrication</span>
+                <span>Geometry</span>
+
               </div>
               <button disabled style={{ cursor: 'not-allowed', opacity: 0.6 }}>
                 View Project (Coming Soon)
               </button>
             </div>
+
+            <div className="project-card">
+
+              <h3>Exploring AirTag Misuse and IoT Security</h3>
+
+              <p>
+                Presented a poster on the misuse of Apple AirTags,digging into real-world attacks, their technical details, and strategies for mitigation. The poster also explored legal and ethical considerations about IoT devices and their misuse.
+              </p>
+
+              <div className="tech-labels">
+                <span>IoT Security</span>
+                <span>Cryptography</span>
+                <span>Cybersecurity Awareness</span>
+                <span>Attack Mitigation</span>
+              </div>
+
+              <a href="https://drive.google.com/file/d/1YX_E1sLM9If62jMTxLuXC0lmEx9LZoDY/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <button>View Project</button>
+              </a>
+
+            </div>
+
+
 
           </div>
 
