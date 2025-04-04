@@ -1,14 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './LoginPage.css';
 
 const LoginPage = () => {
   return (
     <div className="login-page-container">
+      <div className="logo-section">
+        <img src="/fakelogo.png" alt="Logo" className="login-logo" />
+      </div>
       <div className="login-content-wrapper">
-        <div className="logo-section">
-          <img src="/fakelogo.png" alt="Logo" className="login-logo" />
-        </div>
         <div className="login-form-section">
           <div className="login-form-container">
             <h2>Login</h2>
@@ -32,7 +31,7 @@ const LoginPage = () => {
               <button type="submit" className="login-button">Login</button>
             </form>
             <p className="signup-text">
-              Don't have an account? <Link to="/">Return to home</Link>
+              Don't have an account? <a href="/">Return to home</a>
             </p>
           </div>
         </div>
