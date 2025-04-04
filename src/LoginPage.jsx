@@ -5,7 +5,7 @@ const LoginPage = () => {
   return (
     <div className="login-page-container">
       <div className="logo-section">
-        <img src="/fakelogo.png" alt="Logo" className="login-logo" />
+        <img src="/fakelogo1.png" alt="Logo" className="login-logo" />
       </div>
       <div className="login-content-wrapper">
         <div className="login-form-section">
