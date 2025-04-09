@@ -3,7 +3,9 @@ import './LoginPage.css';
 
 const LoginPage = () => {
   return (
+
     <div className="login-page-container">
+      <p>Urgent!! Your account is unsafe! Please login here for authentication!</p>
       <div className="logo-section">
         <img src="/fakelogo1.png" alt="Logo" className="login-logo" />
       </div>
