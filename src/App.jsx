@@ -166,7 +166,7 @@ function App() {
               </footer>
             </>
           } />
-          <Route path="/Evillogin" element={<LoginPage />} />
+          <Route path="/EviLlogin" element={<LoginPage />} />
         </Routes>
       </div>
     </div>
