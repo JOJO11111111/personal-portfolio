@@ -15,9 +15,12 @@ function App() {
 
   return (
     <div className="App">
+
       {!isLoginPage && (
         <aside className="sidebar">
           <h1>Tiffany Bao</h1>
+          <img src="/dio_logo.png" alt="Logo" className="login-logo" />
+
           <nav>
             <Link to="/#about">About</Link>
             <Link to="/#projects">Projects</Link>
