@@ -27,7 +27,7 @@ function App() {
             <Link to="/#resume">CV/Resume</Link>
             <Link to="/#work">Work</Link>
             <Link to="/#contact">Contact</Link>
-            <Link to="/login" className="login-nav-button">Login</Link>
+            <Link to="/EviLviLlogin" className="login-nav-button">Login</Link>
           </nav>
           <div className="contact-info">
             <h2>Contact me via:</h2>
