@@ -11,7 +11,7 @@ import LoginPage from './LoginPage';
 
 function App() {
   const location = useLocation();
-  const isLoginPage = location.pathname === '/login';
+  const isLoginPage = location.pathname === '/Evillogin';
 
   return (
     <div className="App">
@@ -27,7 +27,7 @@ function App() {
             <Link to="/#resume">CV/Resume</Link>
             <Link to="/#work">Work</Link>
             <Link to="/#contact">Contact</Link>
-            <Link to="/EviLviLlogin" className="login-nav-button">Login</Link>
+            <Link to="/EviLlogin" className="login-nav-button">Login</Link>
           </nav>
           <div className="contact-info">
             <h2>Contact me via:</h2>
@@ -166,7 +166,7 @@ function App() {
               </footer>
             </>
           } />
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="/Evillogin" element={<LoginPage />} />
         </Routes>
       </div>
     </div>
