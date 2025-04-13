@@ -7,7 +7,7 @@ const LoginPage = () => {
     <div className="login-page-container">
       <p>Urgent!! Your amazing DIO Account is unsafe! Please login here for authentication!</p>
       <div className="logo-section">
-        <img src="/dio_logo.png" alt="Logo" className="login-logo" />
+        {/* <img src="/dio_logo.png" alt="Logo" className="login-logo" /> */}
       </div>
       <div className="login-content-wrapper">
         <div className="login-form-section">
