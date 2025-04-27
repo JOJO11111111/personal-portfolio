@@ -21,6 +21,7 @@ function App() {
           <h1>Tiffany Bao</h1>
           <img src="/dio_logo.png" alt="Logo" className="login-logo" />
 
+
           <nav>
             <Link to="/#about">About</Link>
             <Link to="/#projects">Projects</Link>
@@ -50,6 +51,11 @@ function App() {
               <section id="about">
                 <h2>About Me</h2>
                 <p>Hi! I'm Tiffany, a senior undergraduate student at BU majoring in Computer Science and Mathematics.</p>
+                <p>
+                  This is my old portfolio, now it's been used as a phishing simulator website for my phishing detector project to test on.
+                  There is an evil login page, which is just for the testing purpose, it is not used for any malicious purposes. However, still, please don't enter any sensitive information on that page.
+                  Please do not send me to jail.
+                </p>
                 <h3>Interests</h3>
                 <ul>
                   <li>AI and Security: My main interests, where I focus on research and development.</li>
